@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/CV.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1975de5d56.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
     <div class="main-container">
-        <div class="sub-container">
+        <div id="sub-container" class="sub-container hide-content-1"">
             <div class="sub-container-1">
                 <div class="profile-container">
                     <div class="profile-image-container">
@@ -28,24 +29,39 @@
                     </div>
                     <div class="info-container">
                         <p>Indonesia</p>
-                        <p>DKI Jakarta</p>
-                        <p>26</p>
+                        <p>Jakarta</p>
+                        <p>18</p>
                     </div>
                 </div>
-                <div class="basic-container">
-
+                <div class="attribute-container">
+                    <div class="label-attribute-container">
+                        <h3>Personal Attributes</h3>
+                    </div>
+                    <div class="content-attribute-container">
+                        <ul>
+                            <li>Bertanggung Jawab</li>
+                            <li>Komitmen Tinggi</li>
+                            <li>Kerja Sama Tim yang Baik</li>
+                            <li>Sikap Positif </li>
+                            <li>Kealihan Adaptasi</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="social-container">
-
+                    <a href="" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                    <a href="" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
                 </div>
             </div>
-            <div class="sub-container-2">
+            <div id="sub-container-2" class="sub-container-2 hide-content-2">
                 <div class="text-container">
                     <h1>Discover my Amazing</h1>
                     <h1>Art Space!</h1>
                     <code>
                         <p>
-                            <span>&ltcode&gt</span> I Buuilt A Good Website <span>&lt/code&gt</span>
+                            <span>&ltcode&gt</span> I Built A Good Website <span>&lt/code&gt</span>
                         </p>
                     </code>
                 </div>
@@ -57,9 +73,11 @@
                 </div>
             </div>
             <div class="sub-container-3">
-
+                <button id="button-exppand" onclick="openContent()"><i class="fa-solid fa-angles-right"></i></button>
             </div>
         </div>
     </div>
+
+    <script src="../js/CV.js"></script>
 </body>
 </html>
