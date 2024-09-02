@@ -212,23 +212,271 @@ body {
 .sub-container-2 {
     width: 100%;
     height: 100%;
-    max-height: 100%;
 
     background-color: #588157;
     background-image: linear-gradient(to bottom right, #588157, #3a5a40);
     filter: drop-shadow(0 0 50px #4cab19);
-    
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 50% 50%;
-    justify-items: center;
-    align-items: center;
-
 }
 
 .hide-content-2 {
     visibility: hidden;
     overflow: auto;
+}
+
+#control-container-1,
+#control-container-2,
+#control-container-3,
+#control-container-4,
+#control-container-5 {
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+    position: absolute;
+}
+
+#control-container-1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+#control-container-2 {
+    padding: 10px;
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 70% 30%;
+    box-sizing: border-box;
+    gap: 3px;
+}
+
+.project-1, .project-2, .project-3{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.project-1 {
+    grid-column: 2 span;
+}
+
+.project-1 img, .project-2 img, .project-3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
+}
+
+#control-container-3 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 50%);
+    box-sizing: border-box;
+}
+
+.school-description, 
+.university-description {
+    width: 95%;
+    height: 95%;
+    padding: 10px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    box-sizing: border-box;
+}
+
+.university-description .label-container,
+.university-description .info-container,
+.school-description .label-container,
+.school-description .info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.school-image, .university-image {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    
+    background-color: red;
+    
+    grid-column: 2 span;
+}
+
+.school-image img, .university-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#control-container-4 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 1fr;
+}
+
+.language-container, .hard-skill-container {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    
+    background-color: #db7f4a;
+
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border: 3px dotted #f5f5f5;
+    border-radius: 10px;
+
+}
+
+.language-container h3, .hard-skill-container h3 {
+    font-size: 20px;
+    font-family: "Press Start 2P", system-ui;
+}
+
+.language-level, .hard-skill-level {
+    width: 100%;
+    height: 100%;
+}
+
+.language-level ul, .hard-skill-level ul {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+.language-level ul li, .hard-skill-level ul li {
+    font-family: "Press Start 2P", system-ui;
+    font-size: 20px;
+    color: #e8d1c0;
+}
+
+.progress-bar-1, 
+.progress-bar-2, 
+.progress-bar-3 {
+    margin: 30px;
+    width: 80%;
+    height: 50px;
+    background-color: #33333380;
+    border-radius: 30px;
+
+    position: relative;
+}
+
+.progress-value-1, 
+.progress-value-2,
+.progress-value-3 {
+    height: 100%;
+    background-color: #bc6c25;
+    
+    position: absolute;
+    border-radius: 30px;
+}
+
+.progress-value-1 {
+    width: 100%;
+}
+
+.progress-value-2 {
+    width: 80%;
+}
+
+.progress-value-3 {
+    width: 40%;
+}
+
+.progress-bar-4,
+.progress-bar-5,
+.progress-bar-6,
+.progress-bar-7,
+.progress-bar-8,
+.progress-bar-9,
+.progress-bar-10,
+.progress-bar-11,
+.progress-bar-12 {
+    margin: 12px;
+    width: 80%;
+    height: 10px;
+    background-color: #33333380;
+    border-radius: 30px;
+
+    position: relative;
+}
+
+.progress-value-4,
+.progress-value-5,
+.progress-value-6,
+.progress-value-7,
+.progress-value-8,
+.progress-value-9,
+.progress-value-10,
+.progress-value-11,
+.progress-value-12 {
+    height: 100%;
+    background-color: #bc6c25;
+    
+    position: absolute;
+    border-radius: 30px;
+}
+
+.progress-value-4 {
+    width: 60%;
+}
+
+.progress-value-5 {
+    width: 30%;
+}
+
+.progress-value-6 {
+    width: 70%;
+}
+
+.progress-value-7 {
+    width: 90%;
+}
+
+.progress-value-8 {
+    width: 75%;
+}
+
+.progress-value-9 {
+    width: 50%;
+}
+
+.progress-value-10 {
+    width: 45%;
+}
+
+.progress-value-11 {
+    width: 70%;
+}
+
+.progress-value-12 {
+    width: 30%;
+}
+
+#control-container-4 h3 {
+    color: #f5f5f5;
+    font-size: 15px;
+    font-family: "Press Start 2P", system-ui;
+}
+
+.hide-content-3 {
+    display: none !important;
 }
 
 .text-container {
@@ -288,6 +536,7 @@ body {
 
 .description-container h1 {
     color: #ffa500;
+    font-family: "Press Start 2P", system-ui;
     text-shadow: 0 0 10px #f5f5f54f;
     font-size: 20px;
 }
@@ -327,11 +576,20 @@ body {
     color: rgb(30, 30, 30);
 }
 
+.sub-container-3 button.active i {
+    color: #000000;
+}
+
 .sub-container-3 i {
     margin: 10px 0;
 
     color: rgb(123, 72, 0);
     font-size: 20px;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
 }
 
 @media (max-width: 1030px) {
@@ -351,7 +609,7 @@ body {
         padding: 0 20px;
 
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 80px;
+        grid-template-rows: 1fr 800px 80px;
     }
 
     .hide-content-1 {
@@ -401,10 +659,8 @@ body {
     }
     
     .sub-container-2 {
-        padding: 5px;
-        grid-template-columns: 1fr;
-        grid-template-rows: 55% 45%;
-        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
     }
 
     .sub-container-3 {
@@ -421,5 +677,9 @@ body {
 
     .sub-container-3 i {
         transform: rotate(90deg);
+    }
+
+    .icon {
+        flex-direction: row;
     }
 }
