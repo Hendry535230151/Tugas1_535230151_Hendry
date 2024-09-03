@@ -270,20 +270,26 @@ body {
 }
 
 #control-container-3 {
+    padding: 10px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 50%);
+    gap: 5px;
     box-sizing: border-box;
 }
 
 .school-description, 
 .university-description {
     width: 95%;
-    height: 95%;
+    height: 100%;
     padding: 10px;
+
+    background-image: linear-gradient(#bc4749, #bc6c25);
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     box-sizing: border-box;
+
+    transition: 0.3s ease-in-out
 }
 
 .university-description .label-container,
@@ -675,7 +681,7 @@ body {
         margin: 0 10px;
     }
 
-    .sub-container-3 i {
+    .sub-container-3 .expand i {
         transform: rotate(90deg);
     }
 
